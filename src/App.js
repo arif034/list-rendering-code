@@ -27,19 +27,27 @@ class App extends Component {
 
   render() {
     const disp = this.state.eles.map((element, index) => {
-      return <div key={index}>{element}</div>;
+      return (
+        <div className="element-list-item" key={index}>
+          {element}
+        </div>
+      );
     });
     console.log(disp);
     return (
       <div className="App">
         <input
+          className="input-area"
           type="text"
           value={this.state.ele}
           onChange={this.changeHandler}
         ></input>
-        <button onClick={this.submitHandler}> Submit</button>
+        <button className="submit-button" onClick={this.submitHandler}>
+          {" "}
+          Submit
+        </button>
         <div className="current-element">{this.state.ele}</div>
-        <div className="element-list">{disp}</div>
+        <div className="element-list-container">{disp}</div>
       </div>
     );
   }

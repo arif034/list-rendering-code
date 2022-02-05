@@ -2,3 +2,41 @@
   font-family: sans-serif;
   text-align: center;
 }
+
+.input-area {
+  width: 160px;
+  height: 25px;
+  border: none;
+  background-color: rgba(0, 0, 255, 0.2);
+  transition: all 200ms linear;
+}
+.input-area:hover {
+  background-color: rgba(0, 0, 255, 0.3);
+}
+
+.submit-button {
+  position: absolute;
+  border: none;
+  width: 60px;
+  height: 25px;
+  background-color: rgba(0, 255, 0, 0.22);
+  color: rgba(0, 0, 0, 0.8);
+  transition: all 200ms linear;
+  transform: translate(-110px, 50px);
+}
+
+.submit-button:hover {
+  width: 70px;
+  height: 30px;
+  background-color: rgba(0, 255, 0, 0.22);
+}
+
+.current-element {
+  transform: translateY(70px);
+  color: rgba(255, 0, 0, 0.2);
+}
+
+.element-list-item {
+  transform: translateY(90px);
+  color: rgba(255, 0, 0, 0.5);
+}
