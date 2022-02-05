@@ -33,7 +33,6 @@ class App extends Component {
         </div>
       );
     });
-    console.log(disp);
     return (
       <div className="App">
         <input
@@ -43,7 +42,6 @@ class App extends Component {
           onChange={this.changeHandler}
         ></input>
         <button className="submit-button" onClick={this.submitHandler}>
-          {" "}
           Submit
         </button>
         <div className="current-element">{this.state.ele}</div>
