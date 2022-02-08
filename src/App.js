@@ -41,7 +41,7 @@ class App extends Component {
           value={this.state.ele}
           onChange={this.changeHandler}
         ></input>
-        <button className="submit-button" onClick={this.submitHandler}>
+        <button className="submit-button" onClickCapture={this.submitHandler}>
           Submit
         </button>
         <div className="current-element">{this.state.ele}</div>
